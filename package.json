@@ -43,5 +43,10 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && git add -A ."
+    }
+  }
 }
