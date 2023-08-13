@@ -1,0 +1,47 @@
+{
+  "name": "mercedes-table",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "watch": "webpack serve --mode development --env goal=development --env development",
+    "server": "node server/app.js",
+    "start": "yarn server & yarn watch",
+    "build": "webpack --mode production",
+    "format": "npx prettier --write ."
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-sass": "^9.0.0",
+    "vue": "^3.2.13",
+    "vue-currency-input": "^3.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@types/webpack-dev-server": "^4.7.2",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "dotenv-webpack": "^8.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "4.3.0",
+    "prettier": "^3.0.0",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "vue-loader": "^17.2.2",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
