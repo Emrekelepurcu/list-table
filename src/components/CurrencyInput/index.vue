@@ -70,7 +70,7 @@ export default {
 .txt {
   width: 96%;
   outline: none;
-  border: 1px solid;
+  border: 1px solid #cfdade;
   border-radius: var(--border-radius-small);
   height: 40px;
   padding-left: 10px;

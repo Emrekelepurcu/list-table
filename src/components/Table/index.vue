@@ -57,16 +57,6 @@ export default {
     box-sizing: border-box;
   }
 
-  &-shadow {
-    position: absolute;
-    z-index: 999;
-    height: 100%;
-    width: 20px;
-    right: 0;
-    pointer-events: none;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  }
-
   &-container {
     overflow-x: auto;
     overflow-y: hidden;

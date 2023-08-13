@@ -13,13 +13,14 @@ button {
     cursor: pointer;
     transition: ease-in-out 0.5s;
 
-    &:hover {
+    &:hover:not(&:disabled) {
       background: var(--color-black);
       color: var(--color-white);
     }
 
     &:disabled {
       cursor: not-allowed !important;
+      background-color: var(--color-grey);
     }
 
     &-primary {

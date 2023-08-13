@@ -3,7 +3,7 @@
     <div class="drawer-wrapper">
       <div class="drawer-content">
         <div class="drawer-content-header">
-          <div class="drawer-content-header-close" @click="closeAction">X</div>
+          <div class="drawer-content-header-close font-weight-semibold" @click="closeAction">X</div>
           <div class="drawer-content-header-title">
             <slot name="drawerTitle"></slot>
           </div>
@@ -24,7 +24,6 @@ export default {
 
   methods: {
     closeAction() {
-      console.log('closeeee')
       this.$emit('close')
     }
   }

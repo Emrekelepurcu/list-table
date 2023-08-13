@@ -1,12 +1,16 @@
 <template>
   <Drawer @close="closeDrawerAction">
-    <template #drawerTitle>EDIT</template>
+    <template #drawerTitle>
+      <div class="font-weight-semibold">
+        EDIT
+      </div>
+    </template>
     <template #drawerBody>
       <div class="edit-container m-top-25">
         <Input labelName="ID" inputType="text" :value="editData.id" :disabled="true" :readonly="true" />
       </div>
       <div class="edit-container m-top-25">
-        <Input labelName="CARID" inputType="text" :value="editData.carId" :disabled="true" :readonly="true" />
+        <Input labelName="Car ID" inputType="text" :value="editData.carId" :disabled="true" :readonly="true" />
       </div>
       <div class="edit-container m-top-25">
         <Input
@@ -38,7 +42,7 @@
           }"
         />
       </div>
-      <div class="edit-container m-top-25">
+      <div class="edit-container checkboxes m-top-25">
         <Input
           inputType="checkbox"
           labelName="In Stock"
@@ -52,7 +56,7 @@
         />
       </div>
       <div class="edit-container color-settings radios m-top-25">
-        <label class="label color-black color-settings-label"> Color Settings </label>
+        <label class="label color-settings-label"> Color Settings </label>
         <div class="color-settings-colors">
           <Input
             class="m-top-10"
@@ -130,10 +134,6 @@ export default {
       this.$emit('close', status)
     },
 
-    closeDrawerActions(status = false) {
-      console.log('testttt')
-    },
-
     inputAction(value, key) {
       if (!key) return
       this.editData[key] = value
@@ -155,6 +155,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
   }
+
+  &.checkboxes {
+    width: 25%;
+  }
 }
 
 .edit-footer-container {
@@ -166,6 +170,10 @@ export default {
 }
 
 .color-settings {
+  &-label {
+      color: var(--color-black);
+  }
+
   &-colors {
     display: flex;
     flex-wrap: wrap;

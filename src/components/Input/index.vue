@@ -111,8 +111,6 @@ input:disabled {
 .input-wrapper {
   width: 100%;
   position: relative;
-  display: flex;
-  justify-content: flex-start;
 
   &-error {
     margin-top: 4px;
@@ -128,7 +126,7 @@ input:disabled {
   width: 100%;
   outline: none;
   border-radius: var(--border-radius-small);
-  border: 1px solid;
+  border: 1px solid #cfdade;
 
   height: 40px;
   padding-left: 10px;
