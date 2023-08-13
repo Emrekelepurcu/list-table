@@ -8,7 +8,7 @@
         </div>
       </template>
       <template #price="data">
-        {{ formatCurrency({ number: data.rowData.price }) }}
+            {{ formatCurrency({ number: data.rowData.price }) }}
       </template>
       <template #inStock="data">
           {{ data.rowData.inStock ? 'In stock' : 'Out of stock' }}
